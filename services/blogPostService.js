@@ -6,8 +6,7 @@ module.exports = {
         var posts = models.BlogPost.findAll({
             order: [
                 ['postDate', 'DESC']
-            ],
-            limit: numberOfPosts
+            ]
         });
         
         return posts;

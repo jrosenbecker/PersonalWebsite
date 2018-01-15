@@ -7,8 +7,10 @@ var blogPostService = require('../services/blogPostService');
 router.get('/getRecentBlogPosts/:numberOfPosts', (req, res) => {
     var numberOfPosts = req.param('numberOfPosts');
     var posts = blogPostService.getRecentBlogPosts(numberOfPosts).then(posts => {
+        console.log(posts);
         res.send(posts)
     }).catch((err) => {
+        console.log(err);
         res.send(JSON.stringify(err));
     });
     
