@@ -1,0 +1,12 @@
+#side-nav-container {
+    left: 0;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    height: 100%;
+    background-color: #641e64;
+}
+
+#main-content-container {
+    padding: 0;
+}

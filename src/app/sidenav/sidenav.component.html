@@ -1,0 +1,6 @@
+<ul id="side-nav">
+    <li routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}"><a routerLink="/">Home</a></li>
+    <li routerLinkActive="active"><a routerLink="/about">About</a></li>
+    <li *ngIf="authService.authenticated" routerLinkActive="active"><a routerLink="/admin">Admin</a></li>
+    <li *ngIf="authService.authenticated" routerLinkActive="active"><a routerLink="/logout" (click)="logout()">Log Out</a></li>
+</ul>

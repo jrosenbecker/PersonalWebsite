@@ -21,6 +21,7 @@ import { CallbackComponent } from './callback.component';
 import { CreateBlogPostComponent } from 'app/admin/create/create.blog.post.component';
 import { DeleteBlogPostComponent } from 'app/admin/delete/delete.blog.post.component';
 import { EditBlogPostComponent } from 'app/admin/edit/edit.blog.post.component';
+import { SideNavComponent } from 'app/sidenav/sidenav.component';
 
 @NgModule({
   declarations: [
@@ -34,7 +35,8 @@ import { EditBlogPostComponent } from 'app/admin/edit/edit.blog.post.component';
     BlogPostComponent,
     CreateBlogPostComponent,
     DeleteBlogPostComponent,
-    EditBlogPostComponent
+    EditBlogPostComponent,
+    SideNavComponent
   ],
   imports: [
     BrowserModule,
