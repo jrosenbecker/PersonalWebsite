@@ -16,12 +16,15 @@ app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: true }));
 app.use(cors());
 
+
+
 // Set the /admin routes to use the admin controller file
 app.use('/admin', adminController);
 app.use('/api', apiController);
 
 // Serve the dist directory statically (i.e. serve the angular app)
 app.use(express.static(path.join(__dirname, '..', 'dist')));
+app.use('/ckeditor', express.static(path.join(__dirname, 'ckeditor')));
 app.use('/*', (req, res) => {
     res.sendFile(path.join(__dirname, '..', 'dist', 'index.html'));
 })

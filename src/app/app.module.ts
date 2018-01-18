@@ -6,6 +6,7 @@ import { HttpModule } from '@angular/http';
 import { MaterializeModule } from 'angular2-materialize';
 import { AppRoutingModule } from './app.routes';
 import { MarkdownModule } from 'ngx-md';
+import { CKEditorComponent } from 'ng2-ckeditor';
 
 import { AppComponent } from './app.component';
 import { HeaderComponent } from './header/header.component';
@@ -36,7 +37,8 @@ import { SideNavComponent } from 'app/sidenav/sidenav.component';
     CreateBlogPostComponent,
     DeleteBlogPostComponent,
     EditBlogPostComponent,
-    SideNavComponent
+    SideNavComponent,
+    CKEditorComponent
   ],
   imports: [
     BrowserModule,
